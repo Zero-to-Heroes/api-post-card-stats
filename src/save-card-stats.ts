@@ -39,6 +39,7 @@ export default async (event): Promise<any> => {
 				)
 			`,
 		);
+		await mysql.end();
 		const response = {
 			statusCode: 200,
 			isBase64Encoded: false,
